@@ -1,0 +1,454 @@
+{
+  "identite": {
+    "nom": "Timothée Benchergui",
+    "titre": "Développeur full-stack",
+    "titreCourt": "Dév. full-stack",
+    "ville": "Brest",
+    "region": "Bretagne",
+    "entreprise": "Alego Solutions",
+    "situation": "Master TIIL-A · UBO Brest · alternance chez Alego Solutions (Groupe Kardol)",
+    "bio": "Je construis des applications web et mobile qui comuniquent entre eux. C'est là que le métier devient intéressant — le reste, c'est du pilotage propre.",
+    "photo": {
+      "src": "img/portrait.jpeg",
+      "legende": "Portrait — déposer img/portrait.jpg dans l'API"
+    },
+    "disponible": false,
+    "disponibilite": "Disponible pour un projet",
+    "faits": [
+      {
+        "cle": "localisation",
+        "label": "Localisation",
+        "valeur": "Brest, Bretagne"
+      },
+      {
+        "cle": "entreprise",
+        "label": "Entreprise",
+        "valeur": "Alego Solutions · Landerneau"
+      },
+      {
+        "cle": "formation",
+        "label": "Formation",
+        "valeur": "Master TIIL-A — UBO"
+      },
+      {
+        "cle": "specialite",
+        "label": "Spécialité",
+        "valeur": "Application web et mobile"
+      }
+    ],
+    "pointsForts": [
+      "Backend NodeJs avec TypeScript",
+      "Mobile Flutter et Kotlin",
+      "Frontend : VueJs, React, Angular",
+      "Docker, PostgreSQL, MongoDB, ..."
+    ]
+  },
+  "reseaux": {
+    "email": "timothee.benchergui@gmail.com",
+    "github": "https://github.com/timo0135",
+    "linkedin": "https://www.linkedin.com/in/timothee-benchergui",
+    "cv": ""
+  },
+  "projets": [
+    {
+      "id": "jingle",
+      "nomCourt": "Jingle",
+      "titre": "Jingle",
+      "contexte": "Projet universitaire · équipe de 4 · déc. 2024 – mars 2025 · backend",
+      "periode": "2024-2025",
+      "description": "Une plateforme de podcasts et de radio en direct : les diffuseurs publient leurs émissions et passent à l'antenne, les auditeurs s'abonnent, notent, commentent et composent leurs playlists. J'ai écrit l'essentiel du backend.",
+      "images": [
+        {
+          "src": "",
+          "legende": "Écran d'accueil / lecteur"
+        }
+      ],
+      "fiche": [
+        {
+          "label": "Backend",
+          "valeur": "Node.js · Express · TypeScript"
+        },
+        {
+          "label": "Frontend",
+          "valeur": "Nuxt 3 · Pinia"
+        },
+        {
+          "label": "Données",
+          "valeur": "PostgreSQL · MongoDB"
+        },
+        {
+          "label": "Temps réel",
+          "valeur": "WebSocket"
+        }
+      ],
+      "points": [
+        "Architecture hexagonale : domaine, cas d'usage, adaptateurs et infrastructure séparés",
+        "Deux implémentations interchangeables des dépôts, PostgreSQL et MongoDB",
+        "Serveur WebSocket qui relaie le flux audio du diffuseur à tous les auditeurs",
+        "Authentification JWT avec refresh token et mots de passe hachés (bcrypt), rôles auditeur / diffuseur / admin",
+        "Une quarantaine de routes REST : podcasts, avis, playlists, musiques, abonnements, directs, toutes documentées"
+      ],
+      "liens": [
+        {
+          "label": "Code sur GitHub",
+          "url": "https://github.com/timo0135/jingle"
+        }
+      ],
+      "tags": [
+        "TypeScript",
+        "Express",
+        "Nuxt",
+        "WebSocket",
+        "PostgreSQL",
+        "MongoDB",
+        "Docker"
+      ]
+    },
+    {
+      "id": "toubeelib",
+      "nomCourt": "Toubeelib",
+      "titre": "Toubeelib",
+      "contexte": "Projet universitaire · équipe de 3 · sept. 2024 – janv. 2025",
+      "periode": "2024-2025",
+      "description": "L'API d'une plateforme de prise de rendez-vous médicaux, dans l'esprit de Doctolib : praticiens, patients, disponibilités et cycle de vie complet d'un rendez-vous.",
+      "images": [
+        {
+          "src": "",
+          "legende": "Extrait de l'API / schéma d'architecture"
+        }
+      ],
+      "fiche": [
+        {
+          "label": "Langage",
+          "valeur": "PHP 8.3"
+        },
+        {
+          "label": "Framework",
+          "valeur": "Slim 4 · PHP-DI"
+        },
+        {
+          "label": "Données",
+          "valeur": "PostgreSQL · PDO"
+        },
+        {
+          "label": "Qualité",
+          "valeur": "PHPUnit · PHPStan"
+        }
+      ],
+      "points": [
+        "Architecture en couches : domaine, services métier, actions HTTP, dépôts PDO",
+        "Authentification JWT avec refresh, contrôle d'accès par rôle",
+        "Rendez-vous : création, modification, annulation, changement d'état",
+        "Agenda d'un praticien sur une période donnée, gestion de ses indisponibilités",
+        "Tests unitaires des services de rendez-vous et de praticiens"
+      ],
+      "liens": [
+        {
+          "label": "Code sur GitHub",
+          "url": "https://github.com/timo0135/toubeelib"
+        }
+      ],
+      "tags": [
+        "PHP",
+        "Slim",
+        "JWT",
+        "PostgreSQL",
+        "PHPUnit",
+        "Docker"
+      ]
+    },
+    {
+      "id": "timely",
+      "nomCourt": "Timely",
+      "titre": "Timely",
+      "contexte": "Projet universitaire · binôme · janv. – févr. 2025 · frontend",
+      "periode": "2025",
+      "description": "Une application de suivi du temps : on lance un chrono sur une activité d'un projet, on se fixe des objectifs pour la journée et on retrouve ensuite où le temps est passé.",
+      "images": [
+        {
+          "src": "",
+          "legende": "Time tracker / statistiques"
+        }
+      ],
+      "fiche": [
+        {
+          "label": "Framework",
+          "valeur": "Vue 3 · Vuetify"
+        },
+        {
+          "label": "État",
+          "valeur": "Pinia (persisté)"
+        },
+        {
+          "label": "Routage",
+          "valeur": "Vue Router, routes protégées"
+        },
+        {
+          "label": "Données",
+          "valeur": "API REST via Axios"
+        }
+      ],
+      "points": [
+        "Time tracker : démarrer, arrêter et corriger une activité en cours",
+        "Projets et activités avec vues de détail et pagination",
+        "Objectifs journaliers rédigés en Markdown",
+        "Page de statistiques sur le temps passé",
+        "Erreurs remontées dans l'interface, états de chargement"
+      ],
+      "liens": [
+        {
+          "label": "Code sur GitHub",
+          "url": "https://github.com/timo0135/timely"
+        }
+      ],
+      "tags": [
+        "Vue.js",
+        "Vuetify",
+        "Pinia"
+      ]
+    },
+    {
+      "id": "web-directory",
+      "nomCourt": "WebDirectory",
+      "titre": "WebDirectory",
+      "contexte": "Projet universitaire · équipe de 4 · juin 2024 · API & back-office",
+      "periode": "2024",
+      "description": "Un annuaire d'entreprise décliné sur trois supports : un back-office pour gérer les fiches, une API publique, un site web et une application mobile qui la consomment.",
+      "images": [
+        {
+          "src": "",
+          "legende": "Back-office / application mobile"
+        }
+      ],
+      "fiche": [
+        {
+          "label": "Back-office",
+          "valeur": "PHP · Slim · Twig"
+        },
+        {
+          "label": "API",
+          "valeur": "PHP · Slim · Eloquent"
+        },
+        {
+          "label": "Clients",
+          "valeur": "JavaScript · Flutter"
+        },
+        {
+          "label": "Livraison",
+          "valeur": "Docker"
+        }
+      ],
+      "points": [
+        "Back-office : authentification, contrôle d'accès, création d'administrateurs",
+        "Gestion des fiches et des services / départements, publication et dépublication",
+        "API : liste triable et filtrable des entrées, images, CORS",
+        "Entrées filtrées et erreurs gérées pour se protéger des injections"
+      ],
+      "liens": [
+        {
+          "label": "Code (API & admin)",
+          "url": "https://github.com/timo0135/WebDirectory.core"
+        },
+        {
+          "label": "App Flutter",
+          "url": "https://github.com/timo0135/WebDirectory.appli"
+        }
+      ],
+      "tags": [
+        "PHP",
+        "Slim",
+        "Twig",
+        "Flutter",
+        "Docker"
+      ]
+    },
+    {
+      "id": "gift",
+      "nomCourt": "Gift",
+      "titre": "Gift",
+      "contexte": "Projet universitaire · équipe de 4 · juin 2024 · intégration & déploiement",
+      "periode": "2024",
+      "description": "Une plateforme de coffrets cadeaux : on parcourt un catalogue de prestations, on compose son coffret ou on part d'un coffret prédéfini, on le paie, puis on l'offre via un lien que le destinataire utilise. Une API publique expose le catalogue.",
+      "images": [
+        {
+          "src": "",
+          "legende": "Catalogue / composition d'un coffret"
+        }
+      ],
+      "fiche": [
+        {
+          "label": "Langage",
+          "valeur": "PHP 8.2"
+        },
+        {
+          "label": "Framework",
+          "valeur": "Slim 4 · Twig"
+        },
+        {
+          "label": "Données",
+          "valeur": "Eloquent · MySQL"
+        },
+        {
+          "label": "Livraison",
+          "valeur": "Docker Compose"
+        }
+      ],
+      "points": [
+        "Catalogue de prestations par catégorie et coffrets prédéfinis",
+        "Coffret : ajout et retrait de prestations, validation, paiement, puis utilisation par le destinataire",
+        "Comptes utilisateurs, contrôle d'accès et protection CSRF des formulaires",
+        "API JSON : catégories, prestations, coffrets",
+        "Mon rôle : squelette du projet, intégration du code de l'équipe, scripts de base de données, conteneurisation et utilisation d'un coffret"
+      ],
+      "liens": [
+        {
+          "label": "Code sur GitHub",
+          "url": "https://github.com/timo0135/gift"
+        }
+      ],
+      "tags": [
+        "PHP",
+        "Slim",
+        "Twig",
+        "Eloquent",
+        "MySQL",
+        "Docker"
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "id": "alego-solutions",
+      "type": "alternance",
+      "poste": "Développeur full-stack en alternance",
+      "organisation": "Alego Solutions (Groupe Kardol)",
+      "lieu": "Landerneau",
+      "periode": "Octobre 2025 - Aout 2027",
+      "debut": "2025-10-27",
+      "fin": "2027-08-31",
+      "description": "Un CRM terrain branché sur l'ERP Sage X3 : backend NestJS, application mobile Flutter qui fonctionne hors ligne, et web services écrits en L4G dans l'ERP.",
+      "points": [
+        "Backend NestJS / TypeScript en architecture hexagonale, avec GraphQL, REST, PostgreSQL et RabbitMQ",
+        "App Flutter offline-first (Riverpod, Hive) qui synchronise clients, commandes, devis et contacts au retour du réseau",
+        "Web services L4G et SOAP Syracuse côté Sage X3, avec un JSON construit à la main faute de librairie"
+      ],
+      "tags": [
+        "NestJS",
+        "Flutter",
+        "Sage X3",
+        "L4G",
+        "GraphQL",
+        "RabbitMQ"
+      ]
+    },
+    {
+      "id": "omnigo",
+      "type": "stage",
+      "poste": "Développeur web (stage)",
+      "organisation": "Omnigo.ca",
+      "lieu": "Montréal, Canada",
+      "periode": "Avril – juin 2023",
+      "debut": "2023-04-07",
+      "fin": "2023-06-27",
+      "duree": "12 semaines",
+      "description": "Refonte du site web de l'entreprise avec Next.js (React) et intégration d'animations liées au scroll avec GSAP. Création de sites web pour d'autres clients avec les mêmes technologies.",
+      "points": [],
+      "tags": [
+        "Next.js",
+        "React",
+        "GSAP"
+      ]
+    },
+    {
+      "id": "lmd-polytechnique",
+      "type": "stage",
+      "poste": "Stagiaire auprès des ingénieurs informatiques",
+      "organisation": "Laboratoire de météorologie dynamique (LMD) · École polytechnique",
+      "lieu": "Palaiseau",
+      "periode": "Février – mai 2022",
+      "debut": "2022-02-27",
+      "fin": "2022-05-03",
+      "duree": "10 semaines",
+      "description": "Création d'une interface web de saisie et d'édition des informations d'un outil de traitement, pour réduire les erreurs de saisie en contrôlant les entrées.",
+      "points": [
+        "Frontend JavaScript / Vue.js avec validation des saisies",
+        "Backend Python FastAPI qui lit les fichiers de configuration de l'outil et les envoie au frontend"
+      ],
+      "tags": [
+        "Vue.js",
+        "JavaScript",
+        "Python",
+        "FastAPI"
+      ]
+    },
+    {
+      "id": "gas-benevolat",
+      "type": "benevolat",
+      "poste": "Bénévole · assistance numérique",
+      "organisation": "Groupe accueil et solidarité (GAS)",
+      "lieu": "Villejuif",
+      "periode": "Été 2022",
+      "debut": "",
+      "fin": "",
+      "description": "Aide aux réfugiés : accompagnement dans l'utilisation de leur téléphone ou de leur ordinateur (e-mails, mots de passe…).",
+      "points": [],
+      "tags": []
+    }
+  ],
+  "competences": {
+    "groupes": [
+      {
+        "niveau": "quotidien",
+        "label": "Quotidien",
+        "items": [
+          "NestJS",
+          "TypeScript",
+          "Vue.js",
+          "Flutter",
+          "PostgreSQL",
+          "Docker"
+        ]
+      },
+      {
+        "niveau": "solide",
+        "label": "Solide",
+        "items": [
+          "PHP",
+          "Java",
+          "Python",
+          "JavaScript",
+          "React",
+          "GraphQL",
+          "RabbitMQ",
+          "MongoDB"
+        ]
+      },
+      {
+        "niveau": "specialite",
+        "label": "Spécialité",
+        "items": [
+          "Sage X3 / L4G",
+          "SOAP Syracuse",
+          "architecture hexagonale",
+          "offline-first"
+        ]
+      },
+      {
+        "niveau": "apprentissage",
+        "label": "En apprentissage",
+        "items": [
+          "Angular",
+          "Spring",
+          "Hibernate / JPA",
+          "Kotlin"
+        ]
+      }
+    ],
+    "notes": []
+  },
+  "contact": {
+    "message": "Basé à Brest ainsi que Rennes et sa périphérie",
+    "sujetMail": "Projet — contact depuis le portfolio",
+    "zone": "Brest · 29, Rennes · 35"
+  }
+}

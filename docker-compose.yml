@@ -1,0 +1,20 @@
+services:
+  # API de données des portfolios -> http://localhost:3000/api/v1/profil
+  api:
+    build: .
+    image: portfolio-api:latest
+    container_name: portfolio-api
+    ports:
+      - "3000:3000"
+    environment:
+      # URL publique de l'API (pour les liens d'images). Vide = déduite de la requête.
+      PUBLIC_URL: ""
+      # Origines autorisées, séparées par des virgules. '*' = toutes.
+      CORS_ORIGINS: "*"
+      CACHE_SECONDS: "60"
+    # données et images montées depuis le disque : on les modifie sans rebuild,
+    # l'API relit profil.json automatiquement
+    volumes:
+      - ./data:/app/data:ro
+      - ./img:/app/img:ro
+    restart: unless-stopped
